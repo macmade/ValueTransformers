@@ -22,15 +22,34 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <ValueTransformers/VTArrayHasMoreThanOneObject.h>
-#import <ValueTransformers/VTArrayHasOnlyOneObject.h>
-#import <ValueTransformers/VTArrayIsEmpty.h>
-#import <ValueTransformers/VTArrayIsNotEmpty.h>
-#import <ValueTransformers/VTBoolToDisabledTextColor.h>
-#import <ValueTransformers/VTCountToString.h>
-#import <ValueTransformers/VTNumberIsGreaterThanZero.h>
-#import <ValueTransformers/VTNumberIsLessThanZero.h>
-#import <ValueTransformers/VTNumberIsZero.h>
-#import <ValueTransformers/VTStringIsEmpty.h>
-#import <ValueTransformers/VTStringIsNotEmpty.h>
-#import <ValueTransformers/VTUppercaseString.h>
+#import <ValueTransformers/ValueTransformers.h>
+
+@implementation VTCountToString
+
++ ( Class )transformedValueClass
+{
+    return [ NSString class ];
+}
+
++ ( BOOL )allowsReverseTransformation
+{
+    return NO;
+}
+
+- ( nullable id )transformedValue: ( nullable id )value
+{
+    NSUInteger count;
+    
+    if( [ value respondsToSelector: @selector( count ) ] )
+    {
+        count = ( NSUInteger )[ value count ];
+    }
+    else
+    {
+        count = 0;
+    }
+    
+    return [ NSString stringWithFormat: @"%lu", ( unsigned long )count ];
+}
+
+@end
