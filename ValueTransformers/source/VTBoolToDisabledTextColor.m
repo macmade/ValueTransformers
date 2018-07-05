@@ -40,7 +40,7 @@
 {
     if( [ value isKindOfClass: [ NSNumber class ] ] == NO )
     {
-        return [ NSColor controlTextColor ];
+        return [ NSColor disabledControlTextColor ];
     }
     
     if( ( ( NSNumber * )value ).boolValue )

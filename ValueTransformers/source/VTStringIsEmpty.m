@@ -38,12 +38,12 @@
 
 - ( nullable id )transformedValue: ( nullable id )value
 {
-    if( value == nil )
+    if( [ value isKindOfClass: [ NSString class ] ] == NO )
     {
-        return [ NSNumber numberWithBool: NO ];
+        return @1;
     }
     
-    return [ NSNumber numberWithBool: ( ( NSString * )value ).length == 0 ];
+    return ( [ ( NSString * )value length ] ) ? @0 : @1;
 }
 
 @end
