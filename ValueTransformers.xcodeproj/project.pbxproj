@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,7 +32,19 @@
 		05D3736720ED91E5007FE14A /* VTArrayIsNotEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734C20ED91E5007FE14A /* VTArrayIsNotEmpty.m */; };
 		05D3736820ED91E5007FE14A /* VTNumberIsZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734D20ED91E5007FE14A /* VTNumberIsZero.m */; };
 		05D3736920ED91E5007FE14A /* VTUppercaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734E20ED91E5007FE14A /* VTUppercaseString.m */; };
+		05D3737220ED96D6007FE14A /* ValueTransformersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3737120ED96D6007FE14A /* ValueTransformersTests.m */; };
+		05D3737420ED96D6007FE14A /* ValueTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05D3737520ED96D6007FE14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0543AE5A20DC33BC00284E99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CD4AB920ED7CD100DBDE99;
+			remoteInfo = ValueTransformers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		050911D820E559CF009EF90C /* Release - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - ccache.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +116,9 @@
 		05D3734C20ED91E5007FE14A /* VTArrayIsNotEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTArrayIsNotEmpty.m; sourceTree = "<group>"; };
 		05D3734D20ED91E5007FE14A /* VTNumberIsZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNumberIsZero.m; sourceTree = "<group>"; };
 		05D3734E20ED91E5007FE14A /* VTUppercaseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTUppercaseString.m; sourceTree = "<group>"; };
+		05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValueTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D3737120ED96D6007FE14A /* ValueTransformersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTransformersTests.m; sourceTree = "<group>"; };
+		05D3737320ED96D6007FE14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +126,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D3736C20ED96D6007FE14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D3737420ED96D6007FE14A /* ValueTransformers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +276,7 @@
 				05CD4AB220ED7B2200DBDE99 /* README.md */,
 				050911D720E559CF009EF90C /* xcconfig */,
 				0509122720E55CB5009EF90C /* ValueTransformers */,
+				05D3737020ED96D6007FE14A /* ValueTransformersTests */,
 				0543AE6320DC33BC00284E99 /* Products */,
 				0509121420E55A7F009EF90C /* Frameworks */,
 			);
@@ -262,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */,
+				05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,6 +338,15 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		05D3737020ED96D6007FE14A /* ValueTransformersTests */ = {
+			isa = PBXGroup;
+			children = (
+				05D3737120ED96D6007FE14A /* ValueTransformersTests.m */,
+				05D3737320ED96D6007FE14A /* Info.plist */,
+			);
+			path = ValueTransformersTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -357,6 +391,24 @@
 			productReference = 05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		05D3736E20ED96D6007FE14A /* ValueTransformersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D3737720ED96D6007FE14A /* Build configuration list for PBXNativeTarget "ValueTransformersTests" */;
+			buildPhases = (
+				05D3736B20ED96D6007FE14A /* Sources */,
+				05D3736C20ED96D6007FE14A /* Frameworks */,
+				05D3736D20ED96D6007FE14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D3737620ED96D6007FE14A /* PBXTargetDependency */,
+			);
+			name = ValueTransformersTests;
+			productName = ValueTransformersTests;
+			productReference = 05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,11 +421,16 @@
 				TargetAttributes = {
 					05CD4AB920ED7CD100DBDE99 = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
+					05D3736E20ED96D6007FE14A = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0543AE5D20DC33BC00284E99 /* Build configuration list for PBXProject "ValueTransformers" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -386,12 +443,20 @@
 			projectRoot = "";
 			targets = (
 				05CD4AB920ED7CD100DBDE99 /* ValueTransformers */,
+				05D3736E20ED96D6007FE14A /* ValueTransformersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		05CD4AB820ED7CD100DBDE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D3736D20ED96D6007FE14A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,16 +485,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05D3736B20ED96D6007FE14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D3737220ED96D6007FE14A /* ValueTransformersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05D3737620ED96D6007FE14A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05CD4AB920ED7CD100DBDE99 /* ValueTransformers */;
+			targetProxy = 05D3737520ED96D6007FE14A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0543AE6E20DC33BD00284E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DB20E559CF009EF90C /* Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5PR93692Y;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Debug;
@@ -438,9 +516,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DC20E559CF009EF90C /* Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5PR93692Y;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Release;
@@ -455,11 +530,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -478,16 +549,40 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05D3737820ED96D6007FE14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ValueTransformers/include",
+				);
+				INFOPLIST_FILE = ValueTransformersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05D3737920ED96D6007FE14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ValueTransformers/include",
+				);
+				INFOPLIST_FILE = ValueTransformersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -508,6 +603,15 @@
 			buildConfigurations = (
 				05CD4AC420ED7CD100DBDE99 /* Debug */,
 				05CD4AC520ED7CD100DBDE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D3737720ED96D6007FE14A /* Build configuration list for PBXNativeTarget "ValueTransformersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D3737820ED96D6007FE14A /* Debug */,
+				05D3737920ED96D6007FE14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

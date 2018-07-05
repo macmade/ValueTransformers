@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "05D3736E20ED96D6007FE14A"
+               BuildableName = "ValueTransformersTests.xctest"
+               BlueprintName = "ValueTransformersTests"
+               ReferencedContainer = "container:ValueTransformers.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "05CD4AB920ED7CD100DBDE99"
+            BuildableName = "ValueTransformers.framework"
+            BlueprintName = "ValueTransformers"
+            ReferencedContainer = "container:ValueTransformers.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

@@ -1,19 +1,5 @@
 language: objective-c
-osx_image: xcode9.4
-cache:
-    directories:
-    - $HOME/.ccache
-install:
-- gem install xcpretty
-- brew install ccache
-- PATH=$PATH:/usr/local/opt/ccache/libexec
-- export PYTHONUSERBASE=~/.local
-script:
-- set -o pipefail && xcodebuild -project "ValueTransformers.xcodeproj" -scheme "ValueTransformers" build analyze | xcpretty
-before_script:
-- ccache -s
-- ccache -z
-after_script:
-- ccache -s
+xcode_project: ValueTransformers.xcodeproj
+xcode_scheme: ValueTransformers
 notifications:
     slack: xs-labs:FXh1yLXNkpcVxKZhZU6icdhI
