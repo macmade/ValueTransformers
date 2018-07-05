@@ -1,5 +1,5 @@
 language: objective-c
-xcode_project: ValueTransformers.xcodeproj
-xcode_scheme: ValueTransformers
+script:
+ - xcodebuild -project ValueTransformers.xcodeproj -scheme ValueTransformers build analyze test
 notifications:
     slack: xs-labs:FXh1yLXNkpcVxKZhZU6icdhI
