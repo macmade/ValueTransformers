@@ -88,6 +88,8 @@
 		0509120520E559CF009EF90C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0509120720E559CF009EF90C /* ccache-config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ccache-config.sh"; sourceTree = "<group>"; };
 		0509120820E559CF009EF90C /* ccache.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ccache.sh; sourceTree = "<group>"; };
+		05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - Library.xcconfig"; sourceTree = "<group>"; };
+		05A6D086238BF1700032EA48 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
 		05CD4AB220ED7B2200DBDE99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CD4AC620ED7CE000DBDE99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,14 +145,16 @@
 		050911D720E559CF009EF90C /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
-				050911D820E559CF009EF90C /* Release - ccache.xcconfig */,
+				0509120520E559CF009EF90C /* .gitignore */,
+				050911DE20E559CF009EF90C /* Common */,
 				050911D920E559CF009EF90C /* Common.xcconfig */,
 				050911DA20E559CF009EF90C /* Debug - ccache.xcconfig */,
+				05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */,
 				050911DB20E559CF009EF90C /* Debug.xcconfig */,
-				050911DC20E559CF009EF90C /* Release.xcconfig */,
 				050911DD20E559CF009EF90C /* README.md */,
-				050911DE20E559CF009EF90C /* Common */,
-				0509120520E559CF009EF90C /* .gitignore */,
+				050911D820E559CF009EF90C /* Release - ccache.xcconfig */,
+				05A6D086238BF1700032EA48 /* Release - Library.xcconfig */,
+				050911DC20E559CF009EF90C /* Release.xcconfig */,
 				0509120620E559CF009EF90C /* Scripts */,
 			);
 			name = xcconfig;
@@ -522,14 +526,13 @@
 		};
 		05CD4AC420ED7CD100DBDE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -542,14 +545,13 @@
 		};
 		05CD4AC520ED7CD100DBDE99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A6D086238BF1700032EA48 /* Release - Library.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
