@@ -1,7 +1,7 @@
 /*******************************************************************************
  * The MIT License (MIT)
  * 
- * Copyright (c) 2018 Jean-David Gadina - www.xs-labs.com
+ * Copyright (c) 2020 Jean-David Gadina - www.xs-labs.com
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,30 +22,16 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-import Foundation
+#import "PerformSelectorUnsafe.h"
 
-@objc( VTCountToString )
-public class CountToString: ValueTransformer
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
+uint64_t VTPerformSelectorUnsafe( id object, SEL selector )
 {
-    @objc public override class func transformedValueClass() -> AnyClass
+    if( [ object respondsToSelector: selector ] )
     {
-        return NSString.self
+        return ( uint64_t )[ object performSelector: selector ];
     }
     
-    @objc public override class func allowsReverseTransformation() -> Bool
-    {
-        return false
-    }
-    
-    @objc public override func transformedValue( _ value: Any? ) -> Any?
-    {
-        guard let object = value as? NSObject else
-        {
-            return "0"
-        }
-        
-        let n = performSelectorUnsafe( object: object, selector: NSSelectorFromString( "count" ) )
-        
-        return "\(n)"
-    }
+    return 0;
 }

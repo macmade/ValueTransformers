@@ -1,7 +1,7 @@
 /*******************************************************************************
  * The MIT License (MIT)
  * 
- * Copyright (c) 2018 Jean-David Gadina - www.xs-labs.com
+ * Copyright (c) 2020 Jean-David Gadina - www.xs-labs.com
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,30 +22,10 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-import Foundation
+@import Foundation;
 
-@objc( VTCountToString )
-public class CountToString: ValueTransformer
-{
-    @objc public override class func transformedValueClass() -> AnyClass
-    {
-        return NSString.self
-    }
-    
-    @objc public override class func allowsReverseTransformation() -> Bool
-    {
-        return false
-    }
-    
-    @objc public override func transformedValue( _ value: Any? ) -> Any?
-    {
-        guard let object = value as? NSObject else
-        {
-            return "0"
-        }
-        
-        let n = performSelectorUnsafe( object: object, selector: NSSelectorFromString( "count" ) )
-        
-        return "\(n)"
-    }
-}
+NS_ASSUME_NONNULL_BEGIN
+
+uint64_t VTPerformSelectorUnsafe( id object, SEL selector ) NS_SWIFT_NAME( performSelectorUnsafe(object:selector:) );
+
+NS_ASSUME_NONNULL_END

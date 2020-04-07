@@ -22,30 +22,4 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-import Foundation
-
-@objc( VTCountToString )
-public class CountToString: ValueTransformer
-{
-    @objc public override class func transformedValueClass() -> AnyClass
-    {
-        return NSString.self
-    }
-    
-    @objc public override class func allowsReverseTransformation() -> Bool
-    {
-        return false
-    }
-    
-    @objc public override func transformedValue( _ value: Any? ) -> Any?
-    {
-        guard let object = value as? NSObject else
-        {
-            return "0"
-        }
-        
-        let n = performSelectorUnsafe( object: object, selector: NSSelectorFromString( "count" ) )
-        
-        return "\(n)"
-    }
-}
+#import <ValueTransformers/PerformSelectorUnsafe.h>

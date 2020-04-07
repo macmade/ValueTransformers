@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05233032243CD25B005BBB8E /* ValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05233031243CD25B005BBB8E /* ValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05233035243CD294005BBB8E /* PerformSelectorUnsafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05233036243CD294005BBB8E /* PerformSelectorUnsafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */; };
 		05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */; };
 		05D3735F20ED91E5007FE14A /* ArrayIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */; };
 		05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734520ED91E5007FE14A /* StringIsEmpty.swift */; };
@@ -75,6 +78,9 @@
 		0509120520E559CF009EF90C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0509120720E559CF009EF90C /* ccache-config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ccache-config.sh"; sourceTree = "<group>"; };
 		0509120820E559CF009EF90C /* ccache.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ccache.sh; sourceTree = "<group>"; };
+		05233031243CD25B005BBB8E /* ValueTransformers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTransformers.h; sourceTree = "<group>"; };
+		05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformSelectorUnsafe.h; sourceTree = "<group>"; };
+		05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformSelectorUnsafe.m; sourceTree = "<group>"; };
 		05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - Library.xcconfig"; sourceTree = "<group>"; };
 		05A6D086238BF1700032EA48 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
 		05CD4AB220ED7B2200DBDE99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -241,10 +247,32 @@
 		0509122720E55CB5009EF90C /* ValueTransformers */ = {
 			isa = PBXGroup;
 			children = (
-				05D3734220ED91E5007FE14A /* source */,
+				05233037243CD4D1005BBB8E /* source */,
 				05CD4AC620ED7CE000DBDE99 /* Info.plist */,
 			);
 			path = ValueTransformers;
+			sourceTree = "<group>";
+		};
+		05233037243CD4D1005BBB8E /* source */ = {
+			isa = PBXGroup;
+			children = (
+				05233031243CD25B005BBB8E /* ValueTransformers.h */,
+				05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */,
+				05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */,
+				05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */,
+				05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */,
+				05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */,
+				05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */,
+				05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */,
+				05D3734620ED91E5007FE14A /* CountToString.swift */,
+				05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */,
+				05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */,
+				05D3734D20ED91E5007FE14A /* NumberIsZero.swift */,
+				05D3734520ED91E5007FE14A /* StringIsEmpty.swift */,
+				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
+				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 		0543AE5920DC33BC00284E99 = {
@@ -268,25 +296,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		05D3734220ED91E5007FE14A /* source */ = {
-			isa = PBXGroup;
-			children = (
-				05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */,
-				05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */,
-				05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */,
-				05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */,
-				05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */,
-				05D3734620ED91E5007FE14A /* CountToString.swift */,
-				05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */,
-				05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */,
-				05D3734D20ED91E5007FE14A /* NumberIsZero.swift */,
-				05D3734520ED91E5007FE14A /* StringIsEmpty.swift */,
-				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
-				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
 		05D3737020ED96D6007FE14A /* ValueTransformersTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +312,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05233032243CD25B005BBB8E /* ValueTransformers.h in Headers */,
+				05233035243CD294005BBB8E /* PerformSelectorUnsafe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +368,7 @@
 				TargetAttributes = {
 					05CD4AB920ED7CD100DBDE99 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Manual;
 					};
 					05D3736E20ED96D6007FE14A = {
@@ -409,6 +421,7 @@
 				05D3736520ED91E5007FE14A /* NumberIsLessThanZero.swift in Sources */,
 				05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */,
 				05D3736620ED91E5007FE14A /* BoolToDisabledTextColor.swift in Sources */,
+				05233036243CD294005BBB8E /* PerformSelectorUnsafe.m in Sources */,
 				05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */,
 				05D3736720ED91E5007FE14A /* ArrayIsNotEmpty.swift in Sources */,
 				05D3736220ED91E5007FE14A /* NumberIsGreaterThanZero.swift in Sources */,
@@ -464,8 +477,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -475,6 +490,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -484,8 +501,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05A6D086238BF1700032EA48 /* Release - Library.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -495,6 +514,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
