@@ -361,7 +361,7 @@
 					};
 					05D3736E20ED96D6007FE14A = {
 						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -444,6 +444,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DB20E559CF009EF90C /* Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Debug;
@@ -452,6 +454,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DC20E559CF009EF90C /* Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Release;
