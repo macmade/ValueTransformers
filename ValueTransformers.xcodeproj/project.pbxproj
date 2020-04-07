@@ -7,31 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D3735020ED91E5007FE14A /* VTArrayHasOnlyOneObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733420ED91E4007FE14A /* VTArrayHasOnlyOneObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735120ED91E5007FE14A /* VTNumberIsLessThanZero.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733520ED91E4007FE14A /* VTNumberIsLessThanZero.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735220ED91E5007FE14A /* VTArrayHasMoreThanOneObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733620ED91E4007FE14A /* VTArrayHasMoreThanOneObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735320ED91E5007FE14A /* VTArrayIsNotEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733720ED91E4007FE14A /* VTArrayIsNotEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735420ED91E5007FE14A /* VTBoolToDisabledTextColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733820ED91E4007FE14A /* VTBoolToDisabledTextColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735620ED91E5007FE14A /* VTUppercaseString.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733A20ED91E4007FE14A /* VTUppercaseString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735720ED91E5007FE14A /* ValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733B20ED91E4007FE14A /* ValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735820ED91E5007FE14A /* VTNumberIsZero.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733C20ED91E4007FE14A /* VTNumberIsZero.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735920ED91E5007FE14A /* VTArrayIsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733D20ED91E4007FE14A /* VTArrayIsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735A20ED91E5007FE14A /* VTStringIsNotEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733E20ED91E4007FE14A /* VTStringIsNotEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735B20ED91E5007FE14A /* VTStringIsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3733F20ED91E4007FE14A /* VTStringIsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735C20ED91E5007FE14A /* VTNumberIsGreaterThanZero.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3734020ED91E4007FE14A /* VTNumberIsGreaterThanZero.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735D20ED91E5007FE14A /* VTCountToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D3734120ED91E4007FE14A /* VTCountToString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D3735E20ED91E5007FE14A /* VTStringIsNotEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734320ED91E5007FE14A /* VTStringIsNotEmpty.m */; };
-		05D3735F20ED91E5007FE14A /* VTArrayIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734420ED91E5007FE14A /* VTArrayIsEmpty.m */; };
-		05D3736020ED91E5007FE14A /* VTStringIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734520ED91E5007FE14A /* VTStringIsEmpty.m */; };
-		05D3736120ED91E5007FE14A /* VTCountToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734620ED91E5007FE14A /* VTCountToString.m */; };
-		05D3736220ED91E5007FE14A /* VTNumberIsGreaterThanZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734720ED91E5007FE14A /* VTNumberIsGreaterThanZero.m */; };
-		05D3736320ED91E5007FE14A /* VTArrayHasOnlyOneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734820ED91E5007FE14A /* VTArrayHasOnlyOneObject.m */; };
-		05D3736420ED91E5007FE14A /* VTArrayHasMoreThanOneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734920ED91E5007FE14A /* VTArrayHasMoreThanOneObject.m */; };
-		05D3736520ED91E5007FE14A /* VTNumberIsLessThanZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734A20ED91E5007FE14A /* VTNumberIsLessThanZero.m */; };
-		05D3736620ED91E5007FE14A /* VTBoolToDisabledTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734B20ED91E5007FE14A /* VTBoolToDisabledTextColor.m */; };
-		05D3736720ED91E5007FE14A /* VTArrayIsNotEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734C20ED91E5007FE14A /* VTArrayIsNotEmpty.m */; };
-		05D3736820ED91E5007FE14A /* VTNumberIsZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734D20ED91E5007FE14A /* VTNumberIsZero.m */; };
-		05D3736920ED91E5007FE14A /* VTUppercaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734E20ED91E5007FE14A /* VTUppercaseString.m */; };
+		05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */; };
+		05D3735F20ED91E5007FE14A /* ArrayIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */; };
+		05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734520ED91E5007FE14A /* StringIsEmpty.swift */; };
+		05D3736120ED91E5007FE14A /* CountToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734620ED91E5007FE14A /* CountToString.swift */; };
+		05D3736220ED91E5007FE14A /* NumberIsGreaterThanZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */; };
+		05D3736320ED91E5007FE14A /* ArrayHasOnlyOneObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */; };
+		05D3736420ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */; };
+		05D3736520ED91E5007FE14A /* NumberIsLessThanZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */; };
+		05D3736620ED91E5007FE14A /* BoolToDisabledTextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */; };
+		05D3736720ED91E5007FE14A /* ArrayIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */; };
+		05D3736820ED91E5007FE14A /* NumberIsZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734D20ED91E5007FE14A /* NumberIsZero.swift */; };
+		05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734E20ED91E5007FE14A /* UppercaseString.swift */; };
 		05D3737220ED96D6007FE14A /* ValueTransformersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3737120ED96D6007FE14A /* ValueTransformersTests.m */; };
 		05D3737420ED96D6007FE14A /* ValueTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */; };
 /* End PBXBuildFile section */
@@ -93,31 +80,18 @@
 		05CD4AB220ED7B2200DBDE99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CD4AC620ED7CE000DBDE99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05D3733420ED91E4007FE14A /* VTArrayHasOnlyOneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTArrayHasOnlyOneObject.h; sourceTree = "<group>"; };
-		05D3733520ED91E4007FE14A /* VTNumberIsLessThanZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNumberIsLessThanZero.h; sourceTree = "<group>"; };
-		05D3733620ED91E4007FE14A /* VTArrayHasMoreThanOneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTArrayHasMoreThanOneObject.h; sourceTree = "<group>"; };
-		05D3733720ED91E4007FE14A /* VTArrayIsNotEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTArrayIsNotEmpty.h; sourceTree = "<group>"; };
-		05D3733820ED91E4007FE14A /* VTBoolToDisabledTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBoolToDisabledTextColor.h; sourceTree = "<group>"; };
-		05D3733A20ED91E4007FE14A /* VTUppercaseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTUppercaseString.h; sourceTree = "<group>"; };
-		05D3733B20ED91E4007FE14A /* ValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueTransformers.h; sourceTree = "<group>"; };
-		05D3733C20ED91E4007FE14A /* VTNumberIsZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNumberIsZero.h; sourceTree = "<group>"; };
-		05D3733D20ED91E4007FE14A /* VTArrayIsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTArrayIsEmpty.h; sourceTree = "<group>"; };
-		05D3733E20ED91E4007FE14A /* VTStringIsNotEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStringIsNotEmpty.h; sourceTree = "<group>"; };
-		05D3733F20ED91E4007FE14A /* VTStringIsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStringIsEmpty.h; sourceTree = "<group>"; };
-		05D3734020ED91E4007FE14A /* VTNumberIsGreaterThanZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNumberIsGreaterThanZero.h; sourceTree = "<group>"; };
-		05D3734120ED91E4007FE14A /* VTCountToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCountToString.h; sourceTree = "<group>"; };
-		05D3734320ED91E5007FE14A /* VTStringIsNotEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStringIsNotEmpty.m; sourceTree = "<group>"; };
-		05D3734420ED91E5007FE14A /* VTArrayIsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTArrayIsEmpty.m; sourceTree = "<group>"; };
-		05D3734520ED91E5007FE14A /* VTStringIsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStringIsEmpty.m; sourceTree = "<group>"; };
-		05D3734620ED91E5007FE14A /* VTCountToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCountToString.m; sourceTree = "<group>"; };
-		05D3734720ED91E5007FE14A /* VTNumberIsGreaterThanZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNumberIsGreaterThanZero.m; sourceTree = "<group>"; };
-		05D3734820ED91E5007FE14A /* VTArrayHasOnlyOneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTArrayHasOnlyOneObject.m; sourceTree = "<group>"; };
-		05D3734920ED91E5007FE14A /* VTArrayHasMoreThanOneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTArrayHasMoreThanOneObject.m; sourceTree = "<group>"; };
-		05D3734A20ED91E5007FE14A /* VTNumberIsLessThanZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNumberIsLessThanZero.m; sourceTree = "<group>"; };
-		05D3734B20ED91E5007FE14A /* VTBoolToDisabledTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBoolToDisabledTextColor.m; sourceTree = "<group>"; };
-		05D3734C20ED91E5007FE14A /* VTArrayIsNotEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTArrayIsNotEmpty.m; sourceTree = "<group>"; };
-		05D3734D20ED91E5007FE14A /* VTNumberIsZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNumberIsZero.m; sourceTree = "<group>"; };
-		05D3734E20ED91E5007FE14A /* VTUppercaseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTUppercaseString.m; sourceTree = "<group>"; };
+		05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringIsNotEmpty.swift; sourceTree = "<group>"; };
+		05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayIsEmpty.swift; sourceTree = "<group>"; };
+		05D3734520ED91E5007FE14A /* StringIsEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringIsEmpty.swift; sourceTree = "<group>"; };
+		05D3734620ED91E5007FE14A /* CountToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountToString.swift; sourceTree = "<group>"; };
+		05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberIsGreaterThanZero.swift; sourceTree = "<group>"; };
+		05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayHasOnlyOneObject.swift; sourceTree = "<group>"; };
+		05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayHasMoreThanOneObject.swift; sourceTree = "<group>"; };
+		05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberIsLessThanZero.swift; sourceTree = "<group>"; };
+		05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolToDisabledTextColor.swift; sourceTree = "<group>"; };
+		05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayIsNotEmpty.swift; sourceTree = "<group>"; };
+		05D3734D20ED91E5007FE14A /* NumberIsZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberIsZero.swift; sourceTree = "<group>"; };
+		05D3734E20ED91E5007FE14A /* UppercaseString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UppercaseString.swift; sourceTree = "<group>"; };
 		05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValueTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D3737120ED96D6007FE14A /* ValueTransformersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTransformersTests.m; sourceTree = "<group>"; };
 		05D3737320ED96D6007FE14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -267,7 +241,6 @@
 		0509122720E55CB5009EF90C /* ValueTransformers */ = {
 			isa = PBXGroup;
 			children = (
-				05D3733220ED91E4007FE14A /* include */,
 				05D3734220ED91E5007FE14A /* source */,
 				05CD4AC620ED7CE000DBDE99 /* Info.plist */,
 			);
@@ -295,49 +268,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		05D3733220ED91E4007FE14A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				05D3733320ED91E4007FE14A /* ValueTransformers */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		05D3733320ED91E4007FE14A /* ValueTransformers */ = {
-			isa = PBXGroup;
-			children = (
-				05D3733B20ED91E4007FE14A /* ValueTransformers.h */,
-				05D3733620ED91E4007FE14A /* VTArrayHasMoreThanOneObject.h */,
-				05D3733420ED91E4007FE14A /* VTArrayHasOnlyOneObject.h */,
-				05D3733D20ED91E4007FE14A /* VTArrayIsEmpty.h */,
-				05D3733720ED91E4007FE14A /* VTArrayIsNotEmpty.h */,
-				05D3733820ED91E4007FE14A /* VTBoolToDisabledTextColor.h */,
-				05D3734120ED91E4007FE14A /* VTCountToString.h */,
-				05D3734020ED91E4007FE14A /* VTNumberIsGreaterThanZero.h */,
-				05D3733520ED91E4007FE14A /* VTNumberIsLessThanZero.h */,
-				05D3733C20ED91E4007FE14A /* VTNumberIsZero.h */,
-				05D3733F20ED91E4007FE14A /* VTStringIsEmpty.h */,
-				05D3733E20ED91E4007FE14A /* VTStringIsNotEmpty.h */,
-				05D3733A20ED91E4007FE14A /* VTUppercaseString.h */,
-			);
-			path = ValueTransformers;
-			sourceTree = "<group>";
-		};
 		05D3734220ED91E5007FE14A /* source */ = {
 			isa = PBXGroup;
 			children = (
-				05D3734920ED91E5007FE14A /* VTArrayHasMoreThanOneObject.m */,
-				05D3734820ED91E5007FE14A /* VTArrayHasOnlyOneObject.m */,
-				05D3734420ED91E5007FE14A /* VTArrayIsEmpty.m */,
-				05D3734C20ED91E5007FE14A /* VTArrayIsNotEmpty.m */,
-				05D3734B20ED91E5007FE14A /* VTBoolToDisabledTextColor.m */,
-				05D3734620ED91E5007FE14A /* VTCountToString.m */,
-				05D3734720ED91E5007FE14A /* VTNumberIsGreaterThanZero.m */,
-				05D3734A20ED91E5007FE14A /* VTNumberIsLessThanZero.m */,
-				05D3734D20ED91E5007FE14A /* VTNumberIsZero.m */,
-				05D3734520ED91E5007FE14A /* VTStringIsEmpty.m */,
-				05D3734320ED91E5007FE14A /* VTStringIsNotEmpty.m */,
-				05D3734E20ED91E5007FE14A /* VTUppercaseString.m */,
+				05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */,
+				05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */,
+				05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */,
+				05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */,
+				05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */,
+				05D3734620ED91E5007FE14A /* CountToString.swift */,
+				05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */,
+				05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */,
+				05D3734D20ED91E5007FE14A /* NumberIsZero.swift */,
+				05D3734520ED91E5007FE14A /* StringIsEmpty.swift */,
+				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
+				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -358,19 +303,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D3735820ED91E5007FE14A /* VTNumberIsZero.h in Headers */,
-				05D3735020ED91E5007FE14A /* VTArrayHasOnlyOneObject.h in Headers */,
-				05D3735D20ED91E5007FE14A /* VTCountToString.h in Headers */,
-				05D3735A20ED91E5007FE14A /* VTStringIsNotEmpty.h in Headers */,
-				05D3735920ED91E5007FE14A /* VTArrayIsEmpty.h in Headers */,
-				05D3735220ED91E5007FE14A /* VTArrayHasMoreThanOneObject.h in Headers */,
-				05D3735620ED91E5007FE14A /* VTUppercaseString.h in Headers */,
-				05D3735720ED91E5007FE14A /* ValueTransformers.h in Headers */,
-				05D3735320ED91E5007FE14A /* VTArrayIsNotEmpty.h in Headers */,
-				05D3735420ED91E5007FE14A /* VTBoolToDisabledTextColor.h in Headers */,
-				05D3735C20ED91E5007FE14A /* VTNumberIsGreaterThanZero.h in Headers */,
-				05D3735120ED91E5007FE14A /* VTNumberIsLessThanZero.h in Headers */,
-				05D3735B20ED91E5007FE14A /* VTStringIsEmpty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,18 +406,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D3736520ED91E5007FE14A /* VTNumberIsLessThanZero.m in Sources */,
-				05D3736920ED91E5007FE14A /* VTUppercaseString.m in Sources */,
-				05D3736620ED91E5007FE14A /* VTBoolToDisabledTextColor.m in Sources */,
-				05D3735E20ED91E5007FE14A /* VTStringIsNotEmpty.m in Sources */,
-				05D3736720ED91E5007FE14A /* VTArrayIsNotEmpty.m in Sources */,
-				05D3736220ED91E5007FE14A /* VTNumberIsGreaterThanZero.m in Sources */,
-				05D3736120ED91E5007FE14A /* VTCountToString.m in Sources */,
-				05D3736820ED91E5007FE14A /* VTNumberIsZero.m in Sources */,
-				05D3736420ED91E5007FE14A /* VTArrayHasMoreThanOneObject.m in Sources */,
-				05D3735F20ED91E5007FE14A /* VTArrayIsEmpty.m in Sources */,
-				05D3736320ED91E5007FE14A /* VTArrayHasOnlyOneObject.m in Sources */,
-				05D3736020ED91E5007FE14A /* VTStringIsEmpty.m in Sources */,
+				05D3736520ED91E5007FE14A /* NumberIsLessThanZero.swift in Sources */,
+				05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */,
+				05D3736620ED91E5007FE14A /* BoolToDisabledTextColor.swift in Sources */,
+				05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */,
+				05D3736720ED91E5007FE14A /* ArrayIsNotEmpty.swift in Sources */,
+				05D3736220ED91E5007FE14A /* NumberIsGreaterThanZero.swift in Sources */,
+				05D3736120ED91E5007FE14A /* CountToString.swift in Sources */,
+				05D3736820ED91E5007FE14A /* NumberIsZero.swift in Sources */,
+				05D3736420ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift in Sources */,
+				05D3735F20ED91E5007FE14A /* ArrayIsEmpty.swift in Sources */,
+				05D3736320ED91E5007FE14A /* ArrayHasOnlyOneObject.swift in Sources */,
+				05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DB20E559CF009EF90C /* Debug.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Debug;
 		};
@@ -520,7 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 050911DC20E559CF009EF90C /* Release.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Release;
 		};
@@ -535,7 +467,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -554,7 +485,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				VERSIONING_SYSTEM = "apple-generic";

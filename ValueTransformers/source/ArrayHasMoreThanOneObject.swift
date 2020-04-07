@@ -22,28 +22,28 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <ValueTransformers/ValueTransformers.h>
+import Foundation
 
-@implementation VTArrayHasOnlyOneObject
-
-+ ( Class )transformedValueClass
+@objc( VTArrayHasMoreThanOneObject )
+public class ArrayHasMoreThanOneObject: ValueTransformer
 {
-    return [ NSNumber class ];
-}
-
-+ ( BOOL )allowsReverseTransformation
-{
-    return NO;
-}
-
-- ( nullable id )transformedValue: ( nullable id )value
-{
-    if( [ value isKindOfClass: [ NSArray class ] ] == NO )
+    @objc public override class func transformedValueClass() -> AnyClass
     {
-        return @0;
+        return NSNumber.self
     }
     
-    return ( [ ( NSArray * )value count ] == 1 ) ? @1 : @0;
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let array = value as? NSArray else
+        {
+            return NSNumber( booleanLiteral: false )
+        }
+        
+        return array.count > 1 ? NSNumber( booleanLiteral: true ) : NSNumber( booleanLiteral: false )
+    }
 }
-
-@end

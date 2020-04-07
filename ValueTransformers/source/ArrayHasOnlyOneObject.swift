@@ -22,12 +22,28 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+import Foundation
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface VTArrayHasMoreThanOneObject: NSValueTransformer
-
-@end
-
-NS_ASSUME_NONNULL_END
+@objc( VTArrayHasOnlyOneObject )
+public class ArrayHasOnlyOneObject: ValueTransformer
+{
+    @objc public override class func transformedValueClass() -> AnyClass
+    {
+        return NSNumber.self
+    }
+    
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let array = value as? NSArray else
+        {
+            return NSNumber( booleanLiteral: false )
+        }
+        
+        return array.count == 1 ? NSNumber( booleanLiteral: true ) : NSNumber( booleanLiteral: false )
+    }
+}

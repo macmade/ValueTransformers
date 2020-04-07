@@ -22,12 +22,33 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+import Foundation
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface VTArrayIsNotEmpty: NSValueTransformer
-
-@end
-
-NS_ASSUME_NONNULL_END
+@objc( VTNumberIsGreaterThanZero )
+public class NumberIsGreaterThanZero: ValueTransformer
+{
+    @objc public override class func transformedValueClass() -> AnyClass
+    {
+        return NSNumber.self
+    }
+    
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let num = value as? NSNumber else
+        {
+            return NSNumber( booleanLiteral: false )
+        }
+        
+        if num.compare( NSNumber( integerLiteral: 0 ) ) == .orderedDescending
+        {
+            return NSNumber( booleanLiteral: true )
+        }
+        
+        return NSNumber( booleanLiteral: false )
+    }
+}

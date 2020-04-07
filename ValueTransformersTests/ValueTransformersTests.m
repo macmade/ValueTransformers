@@ -25,7 +25,8 @@
 #pragma clang diagnostic ignored "-Wgnu-statement-expression"
 
 #import <XCTest/XCTest.h>
-#import <ValueTransformers/ValueTransformers.h>
+
+@import ValueTransformers;
 
 @interface ValueTransformersTests: XCTestCase
 
@@ -101,7 +102,7 @@
     
     vt = [ VTBoolToDisabledTextColor new ];
     
-    XCTAssertEqual( [ VTBoolToDisabledTextColor transformedValueClass ], [ NSNumber class ], @"" );
+    XCTAssertEqual( [ VTBoolToDisabledTextColor transformedValueClass ], [ NSColor class ], @"" );
     XCTAssertFalse( [ VTBoolToDisabledTextColor allowsReverseTransformation ], @"" );
     
     XCTAssertEqual( [ vt transformedValue: @"" ], [ NSColor disabledControlTextColor ], @"" );
@@ -178,7 +179,7 @@
     
     vt = [ VTStringIsEmpty new ];
     
-    XCTAssertEqual( [ VTStringIsEmpty transformedValueClass ], [ NSString class ], @"" );
+    XCTAssertEqual( [ VTStringIsEmpty transformedValueClass ], [ NSNumber class ], @"" );
     XCTAssertFalse( [ VTStringIsEmpty allowsReverseTransformation ], @"" );
     
     XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: nil  ] ).boolValue, @"" );
@@ -193,7 +194,7 @@
     
     vt = [ VTStringIsNotEmpty new ];
     
-    XCTAssertEqual( [ VTStringIsNotEmpty transformedValueClass ], [ NSString class ], @"" );
+    XCTAssertEqual( [ VTStringIsNotEmpty transformedValueClass ], [ NSNumber class ], @"" );
     XCTAssertFalse( [ VTStringIsNotEmpty allowsReverseTransformation ], @"" );
     
     XCTAssertFalse( ( ( NSNumber * )[ vt transformedValue: nil  ] ).boolValue, @"" );

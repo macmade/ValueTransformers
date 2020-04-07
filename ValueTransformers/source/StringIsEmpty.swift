@@ -22,28 +22,28 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <ValueTransformers/ValueTransformers.h>
+import Foundation
 
-@implementation VTStringIsNotEmpty
-
-+ ( Class )transformedValueClass
+@objc( VTStringIsEmpty )
+public class StringIsEmpty: ValueTransformer
 {
-    return [ NSString class ];
-}
-
-+ ( BOOL )allowsReverseTransformation
-{
-    return NO;
-}
-
-- ( nullable id )transformedValue: ( nullable id )value
-{
-    if( [ value isKindOfClass: [ NSString class ] ] == NO )
+    @objc public override class func transformedValueClass() -> AnyClass
     {
-        return @0;
+        return NSNumber.self
     }
     
-    return ( [ ( NSString * )value length ] ) ? @1 : @0;
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let str = value as? NSString else
+        {
+            return NSNumber( booleanLiteral: true )
+        }
+        
+        return NSNumber( booleanLiteral: str.length > 0 ? false : true )
+    }
 }
-
-@end

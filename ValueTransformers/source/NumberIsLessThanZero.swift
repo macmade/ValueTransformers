@@ -22,33 +22,33 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <ValueTransformers/ValueTransformers.h>
+import Foundation
 
-@implementation VTBoolToDisabledTextColor
-
-+ ( Class )transformedValueClass
+@objc( VTNumberIsLessThanZero )
+public class NumberIsLessThanZero: ValueTransformer
 {
-    return [ NSNumber class ];
-}
-
-+ ( BOOL )allowsReverseTransformation
-{
-    return NO;
-}
-
-- ( nullable id )transformedValue: ( nullable id )value
-{
-    if( [ value isKindOfClass: [ NSNumber class ] ] == NO )
+    @objc public override class func transformedValueClass() -> AnyClass
     {
-        return [ NSColor disabledControlTextColor ];
+        return NSNumber.self
     }
     
-    if( ( ( NSNumber * )value ).boolValue )
+    @objc public override class func allowsReverseTransformation() -> Bool
     {
-        return [ NSColor controlTextColor ];
+        return false
     }
     
-    return [ NSColor disabledControlTextColor ];;
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let num = value as? NSNumber else
+        {
+            return NSNumber( booleanLiteral: false )
+        }
+        
+        if num.compare( NSNumber( integerLiteral: 0 ) ) == .orderedAscending
+        {
+            return NSNumber( booleanLiteral: true )
+        }
+        
+        return NSNumber( booleanLiteral: false )
+    }
 }
-
-@end

@@ -22,28 +22,28 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <ValueTransformers/ValueTransformers.h>
+import Foundation
 
-@implementation VTArrayIsEmpty
-
-+ ( Class )transformedValueClass
+@objc( VTUppercaseString )
+public class UppercaseString: ValueTransformer
 {
-    return [ NSNumber class ];
-}
-
-+ ( BOOL )allowsReverseTransformation
-{
-    return NO;
-}
-
-- ( nullable id )transformedValue: ( nullable id )value
-{
-    if( [ value isKindOfClass: [ NSArray class ] ] == NO )
+    @objc public override class func transformedValueClass() -> AnyClass
     {
-        return @1;
+        return NSString.self
     }
     
-    return ( [ ( NSArray * )value count ] ) ? @0 : @1;
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        guard let str = value as? NSString else
+        {
+            return nil
+        }
+        
+        return str.uppercased
+    }
 }
-
-@end

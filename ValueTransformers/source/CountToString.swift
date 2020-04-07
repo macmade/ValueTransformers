@@ -22,12 +22,36 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+import Foundation
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface VTStringIsEmpty: NSValueTransformer
-
-@end
-
-NS_ASSUME_NONNULL_END
+@objc( VTCountToString )
+public class CountToString: ValueTransformer
+{
+    @objc public override class func transformedValueClass() -> AnyClass
+    {
+        return NSString.self
+    }
+    
+    @objc public override class func allowsReverseTransformation() -> Bool
+    {
+        return false
+    }
+    
+    @objc public override func transformedValue( _ value: Any? ) -> Any?
+    {
+        var n = Int( 0 )
+        
+        if let object = value as? NSObject
+        {
+            if object.responds( to: NSSelectorFromString( "count" ) )
+            {
+                if let ptr = object.perform( NSSelectorFromString( "count" ) )?.toOpaque()
+                {
+                    n = Int( bitPattern: ptr )
+                }
+            }
+        }
+        
+        return "\(n)" as NSString
+    }
+}
