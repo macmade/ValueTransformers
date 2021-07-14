@@ -27,8 +27,20 @@ import Cocoa
 @objc( VTBytesToString )
 open class BytesToString: ValueTransformer
 {
+    private static var customFormatter: ( ( uint64 ) -> String )?
+    
+    @objc public class func setCustomFormatter( _ formatter: ( ( uint64 ) -> String )? )
+    {
+        customFormatter = formatter
+    }
+    
     open class func stringFromBytes( _ bytes: uint64 ) -> NSString
     {
+        if let formatter = customFormatter
+        {
+            return formatter( bytes ) as NSString
+        }
+        
         if bytes < 1000
         {
             return "\(bytes) bytes" as NSString

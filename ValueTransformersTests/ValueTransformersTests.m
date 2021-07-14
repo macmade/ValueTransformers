@@ -222,4 +222,53 @@
     XCTAssertTrue( [ [ vt transformedValue: @"fOO" ] isEqualToString: @"FOO" ], @"" );
 }
 
+- ( void )testVTBytesToString
+{
+    VTBytesToString * vt;
+    
+    vt = [ VTBytesToString new ];
+    
+    XCTAssertEqual( [ VTBytesToString transformedValueClass ], [ NSString class ], @"" );
+    XCTAssertFalse( [ VTBytesToString allowsReverseTransformation ], @"" );
+    
+    XCTAssertEqual( [ vt transformedValue: nil ], nil, @"" );
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @10 ], @"10 bytes", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @24 ], @"24 bytes", @"" );
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @1000 ], @"1.00 KB", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @1024 ], @"1.02 KB", @"" );
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @1000000 ], @"1.00 MB", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @1024000 ], @"1.02 MB", @"" );
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @1000000000 ], @"1.00 GB", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @1024000000 ], @"1.02 GB", @"" );
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @1000000000000 ], @"1.00 TB", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @1024000000000 ], @"1.02 TB", @"" );
+}
+
+- ( void )testVTBytesToStringCustomFormatter
+{
+    VTBytesToString * vt;
+    
+    [ VTBytesToString setCustomFormatter: ^( uint64_t bytes ) { ( void )bytes; return @"Foo"; } ];
+    
+    vt = [ VTBytesToString new ];
+    
+    XCTAssertEqual( [ vt transformedValue: @1000 ], @"Foo", @"" );
+    XCTAssertEqual( [ vt transformedValue: @2000 ], @"Foo", @"" );
+    
+    [ VTBytesToString setCustomFormatter: ^( uint64_t bytes ) { ( void )bytes; return @"Bar"; } ];
+    
+    XCTAssertEqual( [ vt transformedValue: @1000 ], @"Bar", @"" );
+    XCTAssertEqual( [ vt transformedValue: @2000 ], @"Bar", @"" );
+    
+    [ VTBytesToString setCustomFormatter: nil ];
+    
+    XCTAssertEqualObjects( [ vt transformedValue: @1000 ], @"1.00 KB", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @2000 ], @"2.00 KB", @"" );
+}
+
 @end
