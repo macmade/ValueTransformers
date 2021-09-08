@@ -1,15 +1,14 @@
 ValueTransformers
 =================
 
-[![Build Status](https://img.shields.io/travis/macmade/ValueTransformers.svg?branch=master&style=flat)](https://travis-ci.org/macmade/ValueTransformers)
-[![Coverage Status](https://img.shields.io/coveralls/macmade/ValueTransformers.svg?branch=master&style=flat)](https://coveralls.io/r/macmade/ValueTransformers?branch=master)
-[![Issues](http://img.shields.io/github/issues/macmade/ValueTransformers.svg?style=flat)](https://github.com/macmade/ValueTransformers/issues)
-![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)
-![License](https://img.shields.io/badge/license-mit-brightgreen.svg?style=flat)
-[![Contact](https://img.shields.io/badge/contact-@macmade-blue.svg?style=flat)](https://twitter.com/macmade)  
-[![Donate-Patreon](https://img.shields.io/badge/donate-patreon-yellow.svg?style=flat)](https://patreon.com/macmade)
-[![Donate-Gratipay](https://img.shields.io/badge/donate-gratipay-yellow.svg?style=flat)](https://www.gratipay.com/macmade)
-[![Donate-Paypal](https://img.shields.io/badge/donate-paypal-yellow.svg?style=flat)](https://paypal.me/xslabs)
+[![Build Status](https://img.shields.io/github/workflow/status/macmade/ValueTransformers/CI)](https://github.com/macmade/ValueTransformers/actions/workflows/ci.yaml)
+[![Issues](http://img.shields.io/github/issues/macmade/ValueTransformers.svg)](https://github.com/macmade/ValueTransformers/issues)
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![License](https://img.shields.io/badge/license-mit-brightgreen.svg)
+[![Contact](https://img.shields.io/badge/contact-@macmade-blue.svg)](https://twitter.com/macmade)  
+[![Donate-Patreon](https://img.shields.io/badge/donate-patreon-yellow.svg)](https://patreon.com/macmade)
+[![Donate-Gratipay](https://img.shields.io/badge/donate-gratipay-yellow.svg)](https://www.gratipay.com/macmade)
+[![Donate-Paypal](https://img.shields.io/badge/donate-paypal-yellow.svg)](https://paypal.me/xslabs)
 
 About
 -----

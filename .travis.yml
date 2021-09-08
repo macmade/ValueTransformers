@@ -1,6 +1,0 @@
-language: objective-c
-osx_image: xcode11.3
-script:
- - xcodebuild -project ValueTransformers.xcodeproj -scheme ValueTransformers build analyze test
-notifications:
-    slack: xs-labs:FXh1yLXNkpcVxKZhZU6icdhI
