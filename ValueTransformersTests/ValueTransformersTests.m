@@ -271,4 +271,34 @@
     XCTAssertEqualObjects( [ vt transformedValue: @2000 ], @"2.00 KB", @"" );
 }
 
+- ( void )testVTSetIsEmpty
+{
+    VTSetIsEmpty * vt;
+    
+    vt = [ VTSetIsEmpty new ];
+    
+    XCTAssertEqual( [ VTSetIsEmpty transformedValueClass ], [ NSNumber class ], @"" );
+    XCTAssertFalse( [ VTSetIsEmpty allowsReverseTransformation ], @"" );
+    
+    XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: nil                              ] ).boolValue, @"" );
+    XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: @""                              ] ).boolValue, @"" );
+    XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: [ NSSet setWithArray: @[     ] ] ] ).boolValue, @"" );
+    XCTAssertFalse( ( ( NSNumber * )[ vt transformedValue: [ NSSet setWithArray: @[ @"" ] ] ] ).boolValue, @"" );
+}
+
+- ( void )testVTSetIsNotEmpty
+{
+    VTSetIsNotEmpty * vt;
+    
+    vt = [ VTSetIsNotEmpty new ];
+    
+    XCTAssertEqual( [ VTSetIsNotEmpty transformedValueClass ], [ NSNumber class ], @"" );
+    XCTAssertFalse( [ VTSetIsNotEmpty allowsReverseTransformation ], @"" );
+    
+    XCTAssertFalse( ( ( NSNumber * )[ vt transformedValue: nil                              ] ).boolValue, @"" );
+    XCTAssertFalse( ( ( NSNumber * )[ vt transformedValue: @""                              ] ).boolValue, @"" );
+    XCTAssertFalse( ( ( NSNumber * )[ vt transformedValue: [ NSSet setWithArray: @[     ] ] ] ).boolValue, @"" );
+    XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: [ NSSet setWithArray: @[ @"" ] ] ] ).boolValue, @"" );
+}
+
 @end
