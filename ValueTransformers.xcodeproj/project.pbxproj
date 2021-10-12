@@ -24,6 +24,8 @@
 		05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734E20ED91E5007FE14A /* UppercaseString.swift */; };
 		05D3737220ED96D6007FE14A /* ValueTransformersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3737120ED96D6007FE14A /* ValueTransformersTests.m */; };
 		05D3737420ED96D6007FE14A /* ValueTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */; };
+		EF0F53592715DB6100BE981A /* SetIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F53582715DB6100BE981A /* SetIsEmpty.swift */; };
+		EF0F535B2715DD1A00BE981A /* SetIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValueTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D3737120ED96D6007FE14A /* ValueTransformersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTransformersTests.m; sourceTree = "<group>"; };
 		05D3737320ED96D6007FE14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0F53582715DB6100BE981A /* SetIsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIsEmpty.swift; sourceTree = "<group>"; };
+		EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIsNotEmpty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +267,8 @@
 				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
 				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
 				05CD4AC620ED7CE000DBDE99 /* Info.plist */,
+				EF0F53582715DB6100BE981A /* SetIsEmpty.swift */,
+				EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */,
 			);
 			path = ValueTransformers;
 			sourceTree = "<group>";
@@ -418,9 +424,11 @@
 				05D3736720ED91E5007FE14A /* ArrayIsNotEmpty.swift in Sources */,
 				05D3736220ED91E5007FE14A /* NumberIsGreaterThanZero.swift in Sources */,
 				05D3736120ED91E5007FE14A /* CountToString.swift in Sources */,
+				EF0F53592715DB6100BE981A /* SetIsEmpty.swift in Sources */,
 				05D3736820ED91E5007FE14A /* NumberIsZero.swift in Sources */,
 				05D3736420ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift in Sources */,
 				05D3735F20ED91E5007FE14A /* ArrayIsEmpty.swift in Sources */,
+				EF0F535B2715DD1A00BE981A /* SetIsNotEmpty.swift in Sources */,
 				05D3736320ED91E5007FE14A /* ArrayHasOnlyOneObject.swift in Sources */,
 				05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */,
 			);
