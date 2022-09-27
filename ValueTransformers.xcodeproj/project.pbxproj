@@ -423,6 +423,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0587468428E2FADD00861788 /* Swift Format */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
