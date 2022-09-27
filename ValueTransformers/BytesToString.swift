@@ -22,34 +22,64 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-import Foundation
+import Cocoa
 
-@objc( VTCountToString )
-public class CountToString: ValueTransformer
+@objc( VTBytesToString )
+open class BytesToString: ValueTransformer
 {
+    private static var customFormatter: ( ( uint64 ) -> String )?
+
     @objc
-    public override class func transformedValueClass() -> AnyClass
+    public class func setCustomFormatter( _ formatter: ( ( uint64 ) -> String )? )
+    {
+        self.customFormatter = formatter
+    }
+
+    open class func stringFromBytes( _ bytes: uint64 ) -> NSString
+    {
+        if let formatter = customFormatter
+        {
+            return formatter( bytes ) as NSString
+        }
+
+        if bytes < 1000
+        {
+            return "\( bytes ) bytes" as NSString
+        }
+        else if bytes < 1000 * 1000
+        {
+            return NSString( format: "%.02f KB", Double( bytes ) / 1000 )
+        }
+        else if bytes < 1000 * 1000 * 1000
+        {
+            return NSString( format: "%.02f MB", ( Double( bytes ) / 1000 ) / 1000 )
+        }
+        else if bytes < 1000 * 1000 * 1000 * 1000
+        {
+            return NSString( format: "%.02f GB", ( ( Double( bytes ) / 1000 ) / 1000 ) / 1000 )
+        }
+
+        return NSString( format: "%.02f TB", ( ( ( Double( bytes ) / 1000 ) / 1000 ) / 1000 ) / 1000 )
+    }
+
+    open override class func transformedValueClass() -> AnyClass
     {
         return NSString.self
     }
 
-    @objc
-    public override class func allowsReverseTransformation() -> Bool
+    open override class func allowsReverseTransformation() -> Bool
     {
         return false
     }
 
-    @objc
-    public override func transformedValue( _ value: Any? ) -> Any?
+    open override func transformedValue( _ value: Any? ) -> Any?
     {
-        guard let object = value as? NSObject
+        guard let num = value as? NSNumber
         else
         {
-            return "0"
+            return nil
         }
 
-        let n = performSelectorUnsafe( object: object, selector: NSSelectorFromString( "count" ) )
-
-        return "\( n )"
+        return BytesToString.stringFromBytes( num.uint64Value )
     }
 }

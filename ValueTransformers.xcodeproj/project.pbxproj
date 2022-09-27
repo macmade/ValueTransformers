@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734E20ED91E5007FE14A /* UppercaseString.swift */; };
 		05D3737220ED96D6007FE14A /* ValueTransformersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D3737120ED96D6007FE14A /* ValueTransformersTests.m */; };
 		05D3737420ED96D6007FE14A /* ValueTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD4ABA20ED7CD100DBDE99 /* ValueTransformers.framework */; };
+		05E4C883271F142600A07D92 /* BytesToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4C882271F142600A07D92 /* BytesToString.swift */; };
 		EF0F53592715DB6100BE981A /* SetIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F53582715DB6100BE981A /* SetIsEmpty.swift */; };
 		EF0F535B2715DD1A00BE981A /* SetIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */; };
 /* End PBXBuildFile section */
@@ -103,6 +104,9 @@
 		05D3736F20ED96D6007FE14A /* ValueTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValueTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D3737120ED96D6007FE14A /* ValueTransformersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTransformersTests.m; sourceTree = "<group>"; };
 		05D3737320ED96D6007FE14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E4C880271F141400A07D92 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		05E4C881271F141400A07D92 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		05E4C882271F142600A07D92 /* BytesToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BytesToString.swift; sourceTree = "<group>"; };
 		EF0F53582715DB6100BE981A /* SetIsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIsEmpty.swift; sourceTree = "<group>"; };
 		EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIsNotEmpty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,24 +255,25 @@
 		0509122720E55CB5009EF90C /* ValueTransformers */ = {
 			isa = PBXGroup;
 			children = (
-				05233031243CD25B005BBB8E /* ValueTransformers.h */,
-				05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */,
-				05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */,
 				05D3734920ED91E5007FE14A /* ArrayHasMoreThanOneObject.swift */,
 				05D3734820ED91E5007FE14A /* ArrayHasOnlyOneObject.swift */,
 				05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */,
 				05D3734C20ED91E5007FE14A /* ArrayIsNotEmpty.swift */,
 				05D3734B20ED91E5007FE14A /* BoolToDisabledTextColor.swift */,
+				05E4C882271F142600A07D92 /* BytesToString.swift */,
 				05D3734620ED91E5007FE14A /* CountToString.swift */,
+				05CD4AC620ED7CE000DBDE99 /* Info.plist */,
 				05D3734720ED91E5007FE14A /* NumberIsGreaterThanZero.swift */,
 				05D3734A20ED91E5007FE14A /* NumberIsLessThanZero.swift */,
 				05D3734D20ED91E5007FE14A /* NumberIsZero.swift */,
+				05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */,
+				05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */,
+				EF0F53582715DB6100BE981A /* SetIsEmpty.swift */,
+				EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */,
 				05D3734520ED91E5007FE14A /* StringIsEmpty.swift */,
 				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
 				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
-				05CD4AC620ED7CE000DBDE99 /* Info.plist */,
-				EF0F53582715DB6100BE981A /* SetIsEmpty.swift */,
-				EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */,
+				05233031243CD25B005BBB8E /* ValueTransformers.h */,
 			);
 			path = ValueTransformers;
 			sourceTree = "<group>";
@@ -276,6 +281,8 @@
 		0543AE5920DC33BC00284E99 = {
 			isa = PBXGroup;
 			children = (
+				05E4C881271F141400A07D92 /* CODE_OF_CONDUCT.md */,
+				05E4C880271F141400A07D92 /* LICENSE */,
 				05CD4AB220ED7B2200DBDE99 /* README.md */,
 				050911D720E559CF009EF90C /* xcconfig */,
 				0509122720E55CB5009EF90C /* ValueTransformers */,
@@ -326,6 +333,7 @@
 				05CD4AB620ED7CD100DBDE99 /* Sources */,
 				05CD4AB720ED7CD100DBDE99 /* Frameworks */,
 				05CD4AB820ED7CD100DBDE99 /* Resources */,
+				0587468428E2FADD00861788 /* Swift Format */,
 			);
 			buildRules = (
 			);
@@ -343,6 +351,7 @@
 				05D3736B20ED96D6007FE14A /* Sources */,
 				05D3736C20ED96D6007FE14A /* Frameworks */,
 				05D3736D20ED96D6007FE14A /* Resources */,
+				0587468728E2FB0800861788 /* Swift Format */,
 			);
 			buildRules = (
 			);
@@ -411,6 +420,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0587468428E2FADD00861788 /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -z \"$CI\" ] && [ -d \"$SRCROOT/Submodules/cgl\" ] && [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    make -f $SRCROOT/Submodules/cgl/Makefile xs-mit\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0587468728E2FB0800861788 /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -z \"$CI\" ] && [ -d \"$SRCROOT/Submodules/cgl\" ] && [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    make -f $SRCROOT/Submodules/cgl/Makefile xs-mit\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05CD4AB620ED7CD100DBDE99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -431,6 +481,7 @@
 				EF0F535B2715DD1A00BE981A /* SetIsNotEmpty.swift in Sources */,
 				05D3736320ED91E5007FE14A /* ArrayHasOnlyOneObject.swift in Sources */,
 				05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */,
+				05E4C883271F142600A07D92 /* BytesToString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +538,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -511,7 +566,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ValueTransformers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_VERSION = 5.0;
@@ -528,7 +587,11 @@
 					"$(SRCROOT)/ValueTransformers/include",
 				);
 				INFOPLIST_FILE = ValueTransformersTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -542,7 +605,11 @@
 					"$(SRCROOT)/ValueTransformers/include",
 				);
 				INFOPLIST_FILE = ValueTransformersTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ValueTransformersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
