@@ -301,4 +301,19 @@
     XCTAssertTrue(  ( ( NSNumber * )[ vt transformedValue: [ NSSet setWithArray: @[ @"" ] ] ] ).boolValue, @"" );
 }
 
+- ( void )testSingleLineString
+{
+    VTSingleLineString * vt;
+
+    vt = [ VTSingleLineString new ];
+
+    XCTAssertEqual( [ VTSingleLineString transformedValueClass ], [ NSString class ], @"" );
+    XCTAssertFalse( [ VTSingleLineString allowsReverseTransformation ], @"" );
+
+    XCTAssertEqualObjects( [ vt transformedValue: nil ],                              nil,             @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @0  ],                              nil,             @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @"hello, world" ],                  @"hello, world", @"" );
+    XCTAssertEqualObjects( [ vt transformedValue: @"hello, world\nhello, universe" ], @"hello, world", @"" );
+}
+
 @end

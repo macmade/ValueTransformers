@@ -10,6 +10,7 @@
 		05233032243CD25B005BBB8E /* ValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05233031243CD25B005BBB8E /* ValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05233035243CD294005BBB8E /* PerformSelectorUnsafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05233036243CD294005BBB8E /* PerformSelectorUnsafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */; };
+		058AC6302BA9E1AD001EEB04 /* SingleLineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AC62F2BA9E1AD001EEB04 /* SingleLineString.swift */; };
 		05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */; };
 		05D3735F20ED91E5007FE14A /* ArrayIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734420ED91E5007FE14A /* ArrayIsEmpty.swift */; };
 		05D3736020ED91E5007FE14A /* StringIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3734520ED91E5007FE14A /* StringIsEmpty.swift */; };
@@ -84,6 +85,7 @@
 		05233031243CD25B005BBB8E /* ValueTransformers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTransformers.h; sourceTree = "<group>"; };
 		05233033243CD294005BBB8E /* PerformSelectorUnsafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformSelectorUnsafe.h; sourceTree = "<group>"; };
 		05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformSelectorUnsafe.m; sourceTree = "<group>"; };
+		058AC62F2BA9E1AD001EEB04 /* SingleLineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLineString.swift; sourceTree = "<group>"; };
 		05A6D085238BF1700032EA48 /* Debug - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - Library.xcconfig"; sourceTree = "<group>"; };
 		05A6D086238BF1700032EA48 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
 		05CD4AB220ED7B2200DBDE99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				05233034243CD294005BBB8E /* PerformSelectorUnsafe.m */,
 				EF0F53582715DB6100BE981A /* SetIsEmpty.swift */,
 				EF0F535A2715DD1900BE981A /* SetIsNotEmpty.swift */,
+				058AC62F2BA9E1AD001EEB04 /* SingleLineString.swift */,
 				05D3734520ED91E5007FE14A /* StringIsEmpty.swift */,
 				05D3734320ED91E5007FE14A /* StringIsNotEmpty.swift */,
 				05D3734E20ED91E5007FE14A /* UppercaseString.swift */,
@@ -427,6 +430,7 @@
 				05D3736920ED91E5007FE14A /* UppercaseString.swift in Sources */,
 				05D3736620ED91E5007FE14A /* BoolToDisabledTextColor.swift in Sources */,
 				05233036243CD294005BBB8E /* PerformSelectorUnsafe.m in Sources */,
+				058AC6302BA9E1AD001EEB04 /* SingleLineString.swift in Sources */,
 				05D3735E20ED91E5007FE14A /* StringIsNotEmpty.swift in Sources */,
 				05D3736720ED91E5007FE14A /* ArrayIsNotEmpty.swift in Sources */,
 				05D3736220ED91E5007FE14A /* NumberIsGreaterThanZero.swift in Sources */,
